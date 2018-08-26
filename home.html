@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="main.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,500" rel="stylesheet">  </head>
+<body>
+   <header>
+    
+
+     <h2>INTERIOR'DECOR</h2>
+
+        </header>
+        <div class="image">
+         
+        </div>
+<i>
+<div class="board">
+   <em><center>Collections</center></em>
+<a href="#">
+<div class="col">
+    <img src="c1.jpg" width="200" height="200">
+<div class="imgcontent">Continental</div>
+</div></a>
+
+<a  href="#">
+<div class="col">
+    <img src="t2.jpg" width="200" height="200">
+    <div class="imgcontent">Tropical</div>
+    </div></a>
+    
+<a  href="#">
+<div class="col">
+    <img src="r1.jpg"  width="200" height="200">
+    <div class="imgcontent">Rustic</div>
+</div></a>
+
+<a  href="#">
+<div class="col">
+     <img src="v1.jpeg" width="200" height="200">
+     <div class="imgcontent">Vintage</div>
+</div></a>
+
+<a href="#">
+<div class="col">
+     <img src="m1.jpg" width="200" height="200">
+     <div class="imgcontent">Modern</div>
+
+    </div>
+    </a>
+    </div>
+</i>
+
+<div class="board2">
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <img src="c6.jpg" style="width:1100px;height: 400px;">
+  <div class="text">Continental</div>
+</div>
+
+<div class="mySlides">
+  <img src="t2.jpg" style="width:1100px;height: 400px;">
+  <div class="text">Tropical</div>
+</div>
+
+<div class="mySlides">
+  <img src="r3.jpg" style="width:1100px;height: 400px;">
+  <div class="text">Rustic</div>
+</div>
+
+<div class="mySlides">
+  <img src="v6.jpg" style="width:1100px;height: 400px;">
+  <div class="text">Vintage</div>
+</div>
+
+    <div class="mySlides">
+  <img src="m4.jpg" style="width:1100px;height: 400px;">
+  <div class="text">Modern</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+ 
+  var slides = document.getElementsByClassName("mySlides");
+     
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+    
+      
+  </div>
+
+<div class="about">
+    
+     <div class="card1">
+      <center>
+    <img src="IMG_1504+tucker+dash.jpg" alt="Person" style="width:150px;height:200px;">
+    <div class="container">
+    
+      <h4><b>Michael</b></h4>
+      <p>Interior Designer</p>
+    
+    </div>
+      </center>
+  </div>
+  <br/>
+  <br/>
+  <div class="card2">
+
+      Designer of famous hotels, houses, bungalows world wide.
+      Known for his creative thinking and hard-working.
+      He is a worldwide traveller.  Have done interior designing for many
+      hotels in Dubai and Australia.  Very well-talented young interior designer in the world. Have published lots of Magzines and papers related to interior decorations.
+      
+  </div>
+</div>
+<div class="contact">
+        <b>michael.interiordecor@gmail.com | 9879-989-897 | 23/3, Brigdestone Tower, Melbourne, Australia.</b>
+</div>
